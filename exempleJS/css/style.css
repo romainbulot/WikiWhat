@@ -1,0 +1,28 @@
+.suggestions {
+	font-size: 20px;
+	margin:50px;
+}
+.refresh{
+	font-size: 20px;
+}
+.container{
+	
+    border: 2px solid #ECECEC;
+    border-radius: 5px;
+    background: #3f3f3f;
+    margin:100px;
+
+}
+
+
+.header {
+    background: white;
+    padding: 25px;
+}
+body{
+background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+}
