@@ -5,7 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
-tools:context="wikiwhat.bulotsantini.dev.wikiwhat.MainActivity" >
+tools:context="wikiwhat.bulotsantini.dev.wikiwhat.view.MainActivity" >
 
 <Button
     android:text="BUTTON"

@@ -1,8 +1,10 @@
-package wikiwhat.bulotsantini.dev.wikiwhat;
+package wikiwhat.bulotsantini.dev.wikiwhat.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import wikiwhat.bulotsantini.dev.wikiwhat.R;
 
 public class MainActivity extends AppCompatActivity {
 
