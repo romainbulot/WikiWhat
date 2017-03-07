@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="40px"
         android:paddingTop="40px"
-        android:text="@string/refresh_all_categories"
+        android:text="@string/play"
         android:layout_weight="0.5"/>
 
 
@@ -149,7 +149,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="40px"
             android:paddingTop="40px"
-            android:text="@string/play"
+            android:text="@string/refresh_all_categories"
             android:layout_weight="0.5"/>
     </LinearLayout>
     </LinearLayout>
