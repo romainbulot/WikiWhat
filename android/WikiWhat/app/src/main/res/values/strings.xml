@@ -4,5 +4,5 @@
     <string name="refresh_all_categories">Refresh all categories</string>
     <string name="play">Play</string>
     <string name="category">Category</string>
-    <string name="welcome_message"></string>
+    <string name="welcome_message">Welcome to @strings/app_name. Please, select your categories then press play button.</string>
 </resources>

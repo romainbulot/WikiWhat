@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WikiWhat</string>
+    <string name="category">Catégorie</string>
+    <string name="play">Jouer</string>
+    <string name="refresh">Actualiser</string>
+    <string name="refresh_all_categories">Tout actualiser</string>
+    <string name="welcome_message">Bienvenue sur l\\\'application WikiWhat. Choisissez vos catégories puis appuyez sur Jouer.\"</string>
+</resources>

@@ -5,8 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 
 import wikiwhat.bulotsantini.dev.wikiwhat.R;
+import wikiwhat.bulotsantini.dev.wikiwhat.presenter.MainPresenter;
 
 public class MainActivity extends AppCompatActivity {
+
+    private MainPresenter mPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
