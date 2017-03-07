@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">WikiWhat</string>
+    <string name="refresh">Refresh</string>
+    <string name="refresh_all_categories">Refresh all categories</string>
+    <string name="play">Play</string>
+    <string name="category">Category</string>
+    <string name="welcome_message"></string>
 </resources>

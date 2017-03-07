@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<<<<<<< HEAD
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="fill_parent"
@@ -120,3 +121,37 @@
             android:text="Jouer !" />
 
     </LinearLayout>
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="wikiwhat.bulotsantini.dev.wikiwhat.view.MainActivity" >
+
+<Button
+    android:text="BUTTON"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Text 1"
+    android:paddingTop="10px"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Text 2"
+    android:paddingTop="10px"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Text 3"
+    android:paddingTop="10px"/>
+
+</LinearLayout>
+>>>>>>> a4444d8f2e593aa95617c9910c877c6dff2710b0
