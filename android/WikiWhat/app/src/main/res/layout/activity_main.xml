@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<<<<<<< HEAD
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="fill_parent"
@@ -154,4 +154,3 @@ tools:context="wikiwhat.bulotsantini.dev.wikiwhat.view.MainActivity" >
     android:paddingTop="10px"/>
 
 </LinearLayout>
->>>>>>> a4444d8f2e593aa95617c9910c877c6dff2710b0
