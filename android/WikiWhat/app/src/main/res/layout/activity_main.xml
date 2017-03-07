@@ -1,34 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-tools:context="wikiwhat.bulotsantini.dev.wikiwhat.MainActivity" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:context="wikiwhat.bulotsantini.dev.wikiwhat.MainActivity" >
 
-<Button
-    android:text="BUTTON"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="50px"
+            android:paddingTop="50px"
+            android:text="Bienvenue sur l'application WikiWhat. Choisissez vos catégories puis appuyez sur Jouer." />
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Text 1"
-    android:paddingTop="10px"/>
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Text 2"
-    android:paddingTop="10px"/>
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Text 3"
-    android:paddingTop="10px"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="40px"
+        android:paddingTop="40px"
+        android:text="Actualiser les 3 catégories" />
 
-</LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="40px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="40px"
+                android:paddingTop="40px"
+                android:text="Catégorie 1"
+                android:layout_weight="0.3"
+                android:textAlignment="viewStart" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="40px"
+                android:paddingTop="40px"
+                android:text="Actualiser" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="40px"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catégorie 2"
+                android:layout_weight="0.3"
+                android:paddingTop="40px"
+                android:paddingLeft="40px"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="40px"
+                android:paddingTop="40px"
+                android:text="Actualiser" />
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="40px"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catégorie 3"
+            android:paddingTop="40px"
+            android:paddingLeft="40px"
+            android:layout_weight="0.3"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="40px"
+            android:paddingTop="40px"
+            android:text="Actualiser" />
+
+    </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="40px"
+            android:paddingTop="40px"
+            android:text="Jouer !" />
+
+    </LinearLayout>
