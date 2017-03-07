@@ -9,23 +9,40 @@
         android:orientation="vertical"
         tools:context="wikiwhat.bulotsantini.dev.wikiwhat.MainActivity" >
 
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingTop="10px">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:src="@drawable/logo" />
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingLeft="50px"
-            android:paddingTop="50px"
+            android:paddingTop="10px"
+            android:layout_weight="0.5"
             android:text="@string/welcome_message" />
 
 
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingLeft="40px"
-        android:paddingTop="40px"
-        android:text="@string/refresh_all_categories" />
+
+
+
+
+
 
 
         <LinearLayout
@@ -101,23 +118,38 @@
             android:layout_weight="0.3"
             />
 
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:paddingLeft="40px"
             android:paddingTop="40px"
             android:text="@string/refresh" />
 
     </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="40px"
+
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40px"
+        android:paddingTop="40px"
+        android:text="@string/refresh_all_categories"
+        android:layout_weight="0.5"/>
+
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:paddingLeft="40px"
             android:paddingTop="40px"
-            android:text="@string/play" />
-
+            android:text="@string/play"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
     </LinearLayout>
