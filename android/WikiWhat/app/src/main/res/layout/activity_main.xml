@@ -7,7 +7,7 @@
         android:layout_height="fill_parent"
         android:layout_gravity="center"
         android:orientation="vertical"
-        tools:context="wikiwhat.bulotsantini.dev.wikiwhat.MainActivity" >
+        tools:context="wikiwhat.bulotsantini.dev.wikiwhat.view.MainActivity" >
 
 
     <LinearLayout
@@ -15,14 +15,14 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="1"
+        android:layout_weight="0.8"
         android:paddingTop="10px">
 
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_weight="0.7"
             android:src="@drawable/logo" />
 
 
@@ -30,19 +30,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:paddingLeft="50px"
+            android:paddingRight="100px"
             android:paddingTop="10px"
-            android:layout_weight="0.5"
-            android:text="@string/welcome_message" />
 
-
+            android:layout_weight="0.3"
+            android:textSize="45px"
+            android:textAlignment="center"
+            android:text="@string/welcome_message"/>
     </LinearLayout>
-
-
-
-
-
-
 
 
         <LinearLayout
@@ -69,7 +64,10 @@
                 android:layout_gravity="center"
                 android:paddingLeft="40px"
                 android:paddingTop="40px"
-                android:text="@string/refresh" />
+                android:text="@string/refresh"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhite"
+                />
 
 
         </LinearLayout>
@@ -96,7 +94,10 @@
                 android:layout_gravity="center"
                 android:paddingLeft="40px"
                 android:paddingTop="40px"
-                android:text="@string/refresh" />
+                android:text="@string/refresh"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhite"
+                />
 
         </LinearLayout>
 
@@ -123,7 +124,10 @@
             android:layout_height="wrap_content"
             android:paddingLeft="40px"
             android:paddingTop="40px"
-            android:text="@string/refresh" />
+            android:text="@string/refresh"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            />
 
     </LinearLayout>
 
@@ -133,7 +137,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingTop="40px"
-
         >
     <Button
         android:layout_width="wrap_content"
@@ -141,8 +144,9 @@
         android:paddingLeft="40px"
         android:paddingTop="40px"
         android:text="@string/play"
+        android:backgroundTint="@color/colorEyeCatching"
+        android:textColor="@color/colorWhite"
         android:layout_weight="0.5"/>
-
 
         <Button
             android:layout_width="wrap_content"
@@ -150,6 +154,8 @@
             android:paddingLeft="40px"
             android:paddingTop="40px"
             android:text="@string/refresh_all_categories"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
             android:layout_weight="0.5"/>
     </LinearLayout>
     </LinearLayout>
