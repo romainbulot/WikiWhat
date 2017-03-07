@@ -11,7 +11,6 @@
 
 
     <LinearLayout
-
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -32,7 +31,6 @@
             android:layout_gravity="center"
             android:paddingRight="100px"
             android:paddingTop="10px"
-
             android:layout_weight="0.3"
             android:textSize="45px"
             android:textAlignment="center"
@@ -58,7 +56,7 @@
 
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonRafraichir1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -89,6 +87,7 @@
 
 
             <Button
+                android:id="@+id/buttonRafraichir2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -120,6 +119,7 @@
             />
 
         <Button
+            android:id="@+id/buttonRafraichir3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="40px"
@@ -139,6 +139,8 @@
         android:paddingTop="40px"
         >
     <Button
+        android:id="@+id/buttonJouer"
+        android:onClick="AfficherJeu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="40px"
@@ -149,6 +151,7 @@
         android:layout_weight="0.5"/>
 
         <Button
+            android:id="@+id/buttonToutRafraichir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="40px"
