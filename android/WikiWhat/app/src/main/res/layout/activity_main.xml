@@ -15,7 +15,7 @@
             android:layout_gravity="center"
             android:paddingLeft="50px"
             android:paddingTop="50px"
-            android:text="Bienvenue sur l'application WikiWhat. Choisissez vos catégories puis appuyez sur Jouer." />
+            android:text="@string/welcome_message" />
 
 
 

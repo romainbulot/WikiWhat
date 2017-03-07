@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+
+        refreshAll();
     }
 
     @Override
@@ -30,13 +32,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-    }
 
-    public void refresh(View view) {
 
     }
 
-    public void refreshAll(View view) {
+    private void refreshAll() {
 
     }
 }
