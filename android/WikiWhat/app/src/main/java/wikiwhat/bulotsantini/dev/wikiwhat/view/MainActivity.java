@@ -2,7 +2,6 @@ package wikiwhat.bulotsantini.dev.wikiwhat.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 
 import wikiwhat.bulotsantini.dev.wikiwhat.R;
 import wikiwhat.bulotsantini.dev.wikiwhat.presenter.MainPresenter;
@@ -32,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
-
     }
 
     private void refresh() {
