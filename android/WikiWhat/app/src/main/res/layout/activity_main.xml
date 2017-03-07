@@ -25,7 +25,7 @@
         android:layout_gravity="center"
         android:paddingLeft="40px"
         android:paddingTop="40px"
-        android:text="Actualiser les 3 catégories" />
+        android:text="@string/refresh_all_categories" />
 
 
         <LinearLayout
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="40px"
                 android:paddingTop="40px"
-                android:text="Catégorie 1"
+                android:text="@string/category_1"
                 android:layout_weight="0.3"
                 android:textAlignment="viewStart" />
 
@@ -52,7 +52,7 @@
                 android:layout_gravity="center"
                 android:paddingLeft="40px"
                 android:paddingTop="40px"
-                android:text="Actualiser" />
+                android:text="@string/refresh" />
 
 
         </LinearLayout>
@@ -67,7 +67,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Catégorie 2"
+                android:text="@string/category_2"
                 android:layout_weight="0.3"
                 android:paddingTop="40px"
                 android:paddingLeft="40px"/>
@@ -79,7 +79,7 @@
                 android:layout_gravity="center"
                 android:paddingLeft="40px"
                 android:paddingTop="40px"
-                android:text="Actualiser" />
+                android:text="@string/refresh" />
 
         </LinearLayout>
 
@@ -95,7 +95,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Catégorie 3"
+            android:text="@string/category_3"
             android:paddingTop="40px"
             android:paddingLeft="40px"
             android:layout_weight="0.3"
@@ -108,7 +108,7 @@
             android:layout_gravity="center"
             android:paddingLeft="40px"
             android:paddingTop="40px"
-            android:text="Actualiser" />
+            android:text="@string/refresh" />
 
     </LinearLayout>
 
@@ -118,6 +118,6 @@
             android:layout_gravity="center"
             android:paddingLeft="40px"
             android:paddingTop="40px"
-            android:text="Jouer !" />
+            android:text="@string/play" />
 
     </LinearLayout>
