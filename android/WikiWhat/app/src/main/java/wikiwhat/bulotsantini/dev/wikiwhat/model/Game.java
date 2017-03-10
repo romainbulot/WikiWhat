@@ -9,11 +9,36 @@ import java.util.List;
 
 public class Game {
     private int score = 0;
-    private String current_page;
+    private Category[] categories = new Category[3];
+    private Page current_page;
     private List<String> hints = new ArrayList<>();
 
-    public Game() {
-
+    public Game(Page newPage) {
+        this(0, newPage);
     }
 
+    public Game(int current_score, Page newPage) {
+        score = current_score;
+        current_page = new Page(newPage);
+    }
+
+    public Game(Game g) {
+        this(g.getScore(), g.getCurrent_page());
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public Category[] getCategories() {
+        return categories;
+    }
+
+    public Page getCurrent_page() {
+        return current_page;
+    }
+
+    public List<String> getHints() {
+        return hints;
+    }
 }

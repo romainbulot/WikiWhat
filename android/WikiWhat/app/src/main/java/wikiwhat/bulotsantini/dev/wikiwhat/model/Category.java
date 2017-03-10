@@ -9,6 +9,10 @@ public class Category {
     private String name;
     private int nb_pages;
 
+    public Category(int id, String name) {
+        this(id, name, 0);
+    }
+
     public Category(int id, String name, int nb_pages) {
         this.id = id;
         this.name = name;
@@ -27,6 +31,10 @@ public class Category {
 
     public String getName() {
         return name;
+    }
+
+    public void setNb_pages(int nb_pages) {
+        this.nb_pages = nb_pages;
     }
 
     public int getNb_pages() {
