@@ -17,7 +17,7 @@ public class MainPresenter implements SingleObserver<String>{
 
     @Override
     public void onSubscribe(Disposable d) {
-        
+
     }
 
     @Override

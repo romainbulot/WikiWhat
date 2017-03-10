@@ -1,0 +1,8 @@
+##### Contenu d'une catégorie #####
+https://en.wikipedia.org/w/api.php?action=query&list=categorymembers&cmpageid=21340828
+
+##### Liste random de catégorie #####
+https://en.wikipedia.org/w/api.php?action=query&list=random&rnlimit=3&prop=categories&rnnamespace=14
+
+##### Contenu d'une page à partir de son id #####
+https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=&pageids=2812649
