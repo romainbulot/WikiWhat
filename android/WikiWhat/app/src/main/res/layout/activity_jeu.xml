@@ -3,8 +3,6 @@ android:orientation="vertical"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent" >
 
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +12,6 @@ android:layout_height="fill_parent" >
         android:textSize="40px"
         android:textAlignment="center"
         android:text="@string/input_proposition"/>
-
 
     <EditText
         android:id="@+id/editText"
@@ -27,11 +24,22 @@ android:layout_height="fill_parent" >
 
 
     <Button
-        android:id="@+id/second"
+        android:id="@+id/buttonValidInput"
+        android:onClick="AfficherResult"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/valid" />
 
+    <TextView
+        android:id="@+id/textResultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:textSize="35px"
+        android:textAlignment="center"
+        android:text=""/>
 
     <ListView
         android:id="@+id/listView"
