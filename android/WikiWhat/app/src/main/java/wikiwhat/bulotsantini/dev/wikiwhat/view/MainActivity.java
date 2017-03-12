@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Set UI elements
         mCat1 = (TextView) findViewById(R.id.text_cat1);
         mCat2 = (TextView) findViewById(R.id.text_cat2);
         mCat3 = (TextView) findViewById(R.id.text_cat3);
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
         mRefresh3 = (Button) findViewById(R.id.buttonRafraichir3);
         mRefreshAll = (Button) findViewById(R.id.buttonToutRafraichir);
         mPlay = (Button) findViewById(R.id.buttonJouer);
+
+        // Set presenter
+        mPresenter = new MainPresenter(this);
     }
 
     @Override
