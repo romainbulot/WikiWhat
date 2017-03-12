@@ -72,4 +72,35 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public Button getmRefresh1() {
+        return mRefresh1;
+    }
+
+    public Button getmRefresh2() {
+        return mRefresh2;
+    }
+
+    public Button getmRefresh3() {
+        return mRefresh3;
+    }
+
+    public Button getmRefreshAll() {
+        return mRefreshAll;
+    }
+
+    public Button getmPlay() {
+        return mPlay;
+    }
+
+    public TextView getmCat1() {
+        return mCat1;
+    }
+
+    public TextView getmCat2() {
+        return mCat2;
+    }
+
+    public TextView getmCat3() {
+        return mCat3;
+    }
 }
