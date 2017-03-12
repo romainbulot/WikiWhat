@@ -9,4 +9,6 @@
     <string name="category_2">Category 2</string>
     <string name="category_3">Category 3</string>
     <string name="err_loading_cat">An error occured. Please refresh again.</string>
+    <string name="input_proposition">Please enter your guess...</string>
+    <string name="valid">Guess!</string>
 </resources>

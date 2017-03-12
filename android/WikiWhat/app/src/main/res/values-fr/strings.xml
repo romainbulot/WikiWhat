@@ -10,4 +10,6 @@
     <string name="category_2">Catégorie 2</string>
     <string name="category_3">Catégorie 3</string>
     <string name="err_loading_cat">Une erreur s\'est produite. Veuillez rafraichir de nouveau.</string>
+    <string name="input_proposition">Veuillez entrer votre proposition...</string>
+    <string name="valid">Deviner!</string>
 </resources>
