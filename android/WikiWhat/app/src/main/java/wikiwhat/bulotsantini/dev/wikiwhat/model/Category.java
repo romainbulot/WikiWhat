@@ -59,6 +59,6 @@ public class Category implements Serializable {
         }
         res += ")";
 
-        return res;
+        return res.replace("Catégorie:","");
     }
 }

@@ -12,6 +12,7 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
 import wikiwhat.bulotsantini.dev.wikiwhat.R;
 import wikiwhat.bulotsantini.dev.wikiwhat.model.Category;
 import wikiwhat.bulotsantini.dev.wikiwhat.reactivex.observer.CategoryObserver;
@@ -96,7 +97,7 @@ public class MainPresenter {
                 }
             });
 
-            observable.subscribe(observer);
+            observable.observeOn(AndroidSchedulers.mainThread()).subscribe(observer);
         }
 
     }

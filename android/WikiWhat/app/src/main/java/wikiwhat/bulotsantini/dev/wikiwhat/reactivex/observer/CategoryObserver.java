@@ -5,6 +5,7 @@ import android.widget.TextView;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
+import wikiwhat.bulotsantini.dev.wikiwhat.R;
 import wikiwhat.bulotsantini.dev.wikiwhat.model.Category;
 
 /**
@@ -40,6 +41,7 @@ public class CategoryObserver implements Observer<Category> {
 
     @Override
     public void onComplete() {
+        Log.d("on complete",category.toString());
         textView.setText(category.toString());
     }
 }
