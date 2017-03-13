@@ -1,10 +1,12 @@
 package wikiwhat.bulotsantini.dev.wikiwhat.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Administrator on 10/03/2017.
  */
 
-public class Category {
+public class Category implements Serializable {
     private int id;
     private String name;
     private int nb_pages;
