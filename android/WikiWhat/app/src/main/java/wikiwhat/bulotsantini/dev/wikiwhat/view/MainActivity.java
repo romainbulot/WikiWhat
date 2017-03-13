@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -44,13 +45,48 @@ public class MainActivity extends AppCompatActivity {
 
         // Set presenter
         mPresenter = new MainPresenter(this);
+
+        // Set event listener
+        mRefresh1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mPresenter.refresh(1);
+                Log.d("Bouton 1", "Presenter ready!");
+            }
+        });
+        mRefresh2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mPresenter.refresh(2);
+                Log.d("Bouton 2", "Presenter ready!");
+            }
+        });
+        mRefresh3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mPresenter.refresh(3);
+                Log.d("Bouton 3", "Presenter ready!");
+            }
+        });
+        mRefreshAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mPresenter.refreshAll();
+            }
+        });
+        mPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                displayGame();
+            }
+        });
+
+        mRefreshAll.performClick();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-
-        refreshAll();
     }
 
     @Override
@@ -63,16 +99,11 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
     }
 
-    private void refresh() {
-
-    }
-
-    private void refreshAll() {
-
-    }
-
-    public void DisplayGame(View view) {
+    public void displayGame() {
         Intent intent = new Intent(MainActivity.this, JeuActivity.class);
+        //intent.putExtra("category1", mPresenter.getCat1());
+        //intent.putExtra("category2", mPresenter.getCat2());
+        //intent.putExtra("category3", mPresenter.getCat3());
         startActivity(intent);
     }
 

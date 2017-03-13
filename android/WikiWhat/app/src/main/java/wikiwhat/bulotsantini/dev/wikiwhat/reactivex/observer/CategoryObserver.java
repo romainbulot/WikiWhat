@@ -1,5 +1,6 @@
 package wikiwhat.bulotsantini.dev.wikiwhat.reactivex.observer;
 
+import android.util.Log;
 import android.widget.TextView;
 
 import io.reactivex.Observer;
@@ -10,7 +11,7 @@ import wikiwhat.bulotsantini.dev.wikiwhat.model.Category;
  * Created by Administrator on 12/03/2017.
  */
 
-public class CategoryObserver implements Observer<String> {
+public class CategoryObserver implements Observer<Category> {
     private TextView textView;
     private Category category;
     private String errorMessage;
@@ -26,15 +27,15 @@ public class CategoryObserver implements Observer<String> {
     }
 
     @Override
-    public void onNext(String value) {
-        // TODO parser le JSON et tester si c'est une catégorie qui en est sortie
-        // ou l'ensemble des pages de la catéfories
-
+    public void onNext(Category value) {
+        category = value;
     }
 
     @Override
     public void onError(Throwable e) {
-        textView.setText(errorMessage);
+        Log.d("Error", e.getMessage());
+        // textView.setText(e.toString());
+        // textView.setText(errorMessage);
     }
 
     @Override
