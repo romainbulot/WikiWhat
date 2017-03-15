@@ -14,8 +14,17 @@ import wikiwhat.bulotsantini.dev.wikiwhat.presenter.JeuPresenter;
  */
 
 public class PageObserver implements Observer<Page> {
+    /**
+     * Presenter using the observer
+     */
     private JeuPresenter presenter;
+    /**
+     * Page to get
+     */
     private Page page;
+    /**
+     * Categories where the page need to be found
+     */
     private Category[] categories;
 
     public PageObserver(JeuPresenter presenter, Category[] categories) {

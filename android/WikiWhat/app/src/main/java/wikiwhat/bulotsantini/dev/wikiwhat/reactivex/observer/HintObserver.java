@@ -13,9 +13,19 @@ import wikiwhat.bulotsantini.dev.wikiwhat.presenter.JeuPresenter;
  */
 
 public class HintObserver implements Observer<String> {
+    /**
+     * Presenter using the obseerver
+     */
     private JeuPresenter presenter;
+    /**
+     * Hint to get
+     */
     private String hint;
 
+    /**
+     * Constructor
+     * @param presenter
+     */
     public HintObserver(JeuPresenter presenter) {
         this.presenter = presenter;
     }
@@ -38,15 +48,15 @@ public class HintObserver implements Observer<String> {
 
     @Override
     public void onComplete() {
+        // Set the list
         presenter.getGame().getHints().add(hint);
         presenter.getView().getHints().add(hint);
 
+        // Reload the list into the listview
         presenter.getView().getHints().clear();
-
         for (String hint : presenter.getGame().getHints()) {
             presenter.getView().getHints().add(hint);
         }
-
         presenter.getView().getHintAdapter().notifyDataSetChanged();
     }
 }

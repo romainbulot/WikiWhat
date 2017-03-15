@@ -14,11 +14,30 @@ import wikiwhat.bulotsantini.dev.wikiwhat.presenter.MainPresenter;
  */
 
 public class CategoryObserver implements Observer<Category> {
+    /**
+     * Presenter using this observer
+     */
     private MainPresenter presenter;
+    /**
+     * TextView where will be displayed the category
+     */
     private TextView textView;
+    /**
+     * Category
+     */
     private Category category;
+    /**
+     * Error message
+     */
     private String errorMessage;
 
+    /**
+     * Constructor
+     * @param presenter
+     * @param textView
+     * @param cat
+     * @param errorMessage
+     */
     public CategoryObserver(MainPresenter presenter, TextView textView, Category cat, String errorMessage) {
         this.presenter = presenter;
         this.textView = textView;
@@ -40,6 +59,7 @@ public class CategoryObserver implements Observer<Category> {
 
     @Override
     public void onError(Throwable e) {
+        // TODO find a better way to improve the displaying of the error
         Log.d("Error", e.getMessage());
         // textView.setText(e.toString());
         // textView.setText(errorMessage);

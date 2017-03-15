@@ -24,16 +24,47 @@ import wikiwhat.bulotsantini.dev.wikiwhat.view.MainActivity;
  */
 
 public class MainPresenter {
+    /**
+     * View linked to the presenter
+     */
     private MainActivity view;
+    /**
+     * Observer of the first category
+     */
     private Observer<Category> cat1_observer;
+    /**
+     * First category
+     */
     private Category cat1;
+    /**
+     * Observer of the second category
+     */
     private Observer<Category> cat2_observer;
+    /**
+     * Second category
+     */
     private Category cat2;
+    /**
+     * Observer of the third category
+     */
     private Observer<Category> cat3_observer;
+    /**
+     * Third category
+     */
     private Category cat3;
+    /**
+     * Url to load randomly a category
+     */
     public static final String url_cat = "https://fr.wikipedia.org/w/api.php?action=query&list=random&prop=categories&rnnamespace=14&format=json";
+    /**
+     * Url to get all the pages included in a category
+     */
     public static final String url_nb_pages = "https://fr.wikipedia.org/w/api.php?action=query&list=categorymembers&format=json&cmpageid=";
 
+    /**
+     * Constructor
+     * @param v
+     */
     public MainPresenter(MainActivity v) {
         view = v;
         cat1 = new Category();
@@ -44,6 +75,10 @@ public class MainPresenter {
         cat3_observer = new CategoryObserver(this, view.getmCat3(), cat3, view.getResources().getString(R.string.err_loading_cat));
     }
 
+    /**
+     * Refresh the category i
+     * @param i
+     */
     public void refresh(int i) {
         Observer<Category> observer = null;
 
@@ -98,24 +133,43 @@ public class MainPresenter {
 
     }
 
+    /**
+     * Refresh all categories
+     */
     public void refreshAll() {
         refresh(1);
         refresh(2);
         refresh(3);
     }
 
+    /**
+     * Get the first category
+     * @return cat1
+     */
     public Category getCat1() {
         return cat1;
     }
 
+    /**
+     * Get the second category
+     * @return cat2
+     */
     public Category getCat2() {
         return cat2;
     }
 
+    /**
+     * Get the third category
+     * @return cat3
+     */
     public Category getCat3() {
         return cat3;
     }
 
+    /**
+     * Get the view
+     * @return view
+     */
     public MainActivity getView() {
         return view;
     }
