@@ -101,9 +101,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayGame() {
         Intent intent = new Intent(MainActivity.this, JeuActivity.class);
-        //intent.putExtra("category1", mPresenter.getCat1());
-        //intent.putExtra("category2", mPresenter.getCat2());
-        //intent.putExtra("category3", mPresenter.getCat3());
+        intent.putExtra("category1", mPresenter.getCat1());
+        intent.putExtra("category2", mPresenter.getCat2());
+        intent.putExtra("category3", mPresenter.getCat3());
         startActivity(intent);
     }
 

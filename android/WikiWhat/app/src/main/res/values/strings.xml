@@ -11,4 +11,12 @@
     <string name="err_loading_cat">An error occured. Please refresh again.</string>
     <string name="input_proposition">Please enter your guess...</string>
     <string name="valid">Guess!</string>
+    <string name="loading">Loading...</string>
+    <string name="title_game">Find the wiki page</string>
+    <string name="result_good_1">Congratulations, you find the good answer. Your score is</string>
+    <string name="result_good_2">point(s)</string>
+    <string name="result_bad">Your answer is not good. Try again with the new hint.</string>
+    <string name="result_fail">You failed. The solution was</string>
+    <string name="result_empty">Please fill the field</string>
+    <string name="btn_play_again">Play again!</string>
 </resources>

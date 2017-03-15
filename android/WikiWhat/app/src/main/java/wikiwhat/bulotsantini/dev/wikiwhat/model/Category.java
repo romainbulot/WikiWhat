@@ -11,6 +11,10 @@ public class Category implements Serializable {
     private String name;
     private int nb_pages;
 
+    public Category() {
+
+    }
+
     public Category(int id, String name) {
         this(id, name, 0);
     }
@@ -31,8 +35,16 @@ public class Category implements Serializable {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setNb_pages(int nb_pages) {

@@ -36,28 +36,27 @@ public class MainPresenter {
 
     public MainPresenter(MainActivity v) {
         view = v;
-        cat1_observer = new CategoryObserver(view.getmCat1(), view.getResources().getString(R.string.err_loading_cat));
-        cat2_observer = new CategoryObserver(view.getmCat2(), view.getResources().getString(R.string.err_loading_cat));
-        cat3_observer = new CategoryObserver(view.getmCat3(), view.getResources().getString(R.string.err_loading_cat));
+        cat1 = new Category();
+        cat2 = new Category();
+        cat3 = new Category();
+        cat1_observer = new CategoryObserver(this, view.getmCat1(), cat1, view.getResources().getString(R.string.err_loading_cat));
+        cat2_observer = new CategoryObserver(this, view.getmCat2(), cat2, view.getResources().getString(R.string.err_loading_cat));
+        cat3_observer = new CategoryObserver(this, view.getmCat3(), cat3, view.getResources().getString(R.string.err_loading_cat));
     }
 
     public void refresh(int i) {
         Observer<Category> observer = null;
-        TextView textView = null;
 
         // Select the observer to subscribe
         switch (i) {
             case 1:
                 observer = cat1_observer;
-                textView = view.getmCat1();
                 break;
             case 2:
                 observer = cat2_observer;
-                textView = view.getmCat2();
                 break;
             case 3:
                 observer = cat3_observer;
-                textView = view.getmCat3();
                 break;
             default:
                 break;
@@ -72,12 +71,9 @@ public class MainPresenter {
 
                         @Override
                         public void run() {
-                            // e.onNext(new Category(1, "Test", 0));
-                            // e.onComplete();
                             try {
                                 // Get the JSON from the url
                                 String json_rand_cat = JsonRequest.getFromUrl(url_cat);
-                                Log.d("Error", json_rand_cat);
                                 JSONObject obj = new JSONObject(json_rand_cat);
                                 int id = obj.getJSONObject("query").getJSONArray("random").getJSONObject(0).getInt("id");
                                 String name = obj.getJSONObject("query").getJSONArray("random").getJSONObject(0).getString("title");
@@ -120,4 +116,7 @@ public class MainPresenter {
         return cat3;
     }
 
+    public MainActivity getView() {
+        return view;
+    }
 }

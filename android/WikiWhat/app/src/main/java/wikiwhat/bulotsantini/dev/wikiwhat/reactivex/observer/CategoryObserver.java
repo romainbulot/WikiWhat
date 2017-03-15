@@ -7,29 +7,35 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import wikiwhat.bulotsantini.dev.wikiwhat.R;
 import wikiwhat.bulotsantini.dev.wikiwhat.model.Category;
+import wikiwhat.bulotsantini.dev.wikiwhat.presenter.MainPresenter;
 
 /**
  * Created by Administrator on 12/03/2017.
  */
 
 public class CategoryObserver implements Observer<Category> {
+    private MainPresenter presenter;
     private TextView textView;
     private Category category;
     private String errorMessage;
 
-    public CategoryObserver(TextView textView, String errorMessage) {
+    public CategoryObserver(MainPresenter presenter, TextView textView, Category cat, String errorMessage) {
+        this.presenter = presenter;
         this.textView = textView;
+        this.category = cat;
         this.errorMessage = errorMessage;
     }
 
     @Override
     public void onSubscribe(Disposable d) {
-        // TODO mettre un petit spinner de chargement
+        textView.setText(presenter.getView().getResources().getString(R.string.loading));
     }
 
     @Override
     public void onNext(Category value) {
-        category = value;
+        category.setId(value.getId());
+        category.setNb_pages(value.getNb_pages());
+        category.setName(value.getName());
     }
 
     @Override

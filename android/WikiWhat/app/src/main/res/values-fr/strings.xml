@@ -12,4 +12,12 @@
     <string name="err_loading_cat">Une erreur s\'est produite. Veuillez rafraichir de nouveau.</string>
     <string name="input_proposition">Veuillez entrer votre proposition...</string>
     <string name="valid">Deviner!</string>
+    <string name="loading">En cours de chargement...</string>
+    <string name="title_game">Devinez la page wiki</string>
+    <string name="btn_play_again">Jouer encore!</string>
+    <string name="result_bad">Votre réponse est incorrecte. Essayer encore avec le nouvel indice.</string>
+    <string name="result_empty">Veuillez insérer une réponse</string>
+    <string name="result_fail">Vous avez échoué. La solution était</string>
+    <string name="result_good_1">Félicitations, vous avez trouvé la bonne réponse. Votre score est</string>
+    <string name="result_good_2">point(s)</string>
 </resources>
